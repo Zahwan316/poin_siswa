@@ -1,0 +1,200 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --navcolor:#59b8ba;
+    --primarycolor:#dfe6ee;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+}
+
+
+body{
+    font-family: sans-serif;
+    background-color: #f4f4f4 !important;
+    overflow-x: hidden;
+}
+
+.box-container{
+    width:100%;
+    height:190vh;
+    background-color:#f6f6f6;
+   
+    padding:1vh 1vw
+}
+
+.top-wrapper{
+    width: 100%;
+    height: 60vh;
+    margin-bottom: 14vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.img-wrapper{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.img-wrapper img{
+    width: 80%;
+    height: 80%;
+    
+}
+
+.info-wrapper{
+    width: 60%;
+    height: 100%;
+   
+}
+
+.info-wrapper li h2,.info-wrapper li p{
+    margin:0;
+}
+
+.info-wrapper ul{
+    padding-left:0;
+   
+}
+
+.info-wrapper li{
+    margin-bottom:2vh;
+}
+
+.info-wrapper li p{
+    font-size:1rem
+   
+}
+
+.info-wrapper li h2{
+    margin-bottom:1vh;
+    font-size:1.5rem
+}
+
+.bottom-wrapper{
+    width: 100%;
+    height: 120vh;
+    
+}
+
+.maintable{
+    width: 100%;
+    height: 100%;
+}
+
+.maintable td{
+    text-align: left;
+    height: 8vh;
+    vertical-align: middle;
+}
+
+.maintable tr:nth-child(even){
+    background-color:#dddddd
+}
+
+.maintable h2{
+    color:#362FD9;
+    margin-bottom:6vh
+}
+
+.button-container{
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.button-container a {
+    width: 16vw;
+    height: 100%;
+    text-decoration: none;
+}
+
+.button-edit,.button-class{
+    width: 100%;
+    height: 100%;
+    background-color:#008000;
+    border-radius: 8px;
+    color:white;
+    border:none;
+    margin:0 1vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-edit p,.button-class p{
+    margin-bottom:0
+}
+
+.button-class{
+    background-color:#003180;
+}
+
+.title{
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    flex-direction: row;
+    margin-bottom:6vh;
+    color:#362FD9;
+
+}
+
+.title-main{
+    width: 40%;
+    empty-cells: 100%;
+}
+
+.btn-delete{
+    width: 4vw;
+    height: 6vh;
+    background-color:#ff0000;
+    color:#ffffff;
+    border:none;
+    border-radius: 8px;
+}
+
+.btn-print{
+    width: 4vw;
+    height: 100%;
+    border-radius:8px;
+    background-color: red;
+    color:white;
+    border: none;
+}
+
+.href_print{
+    width: 6vw !important;
+    height: 100%;
+}
+
+/* edit siswa */
+
+.info-wrapper ul li input{
+    width: 100%;
+}
+
+.input-radio{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+

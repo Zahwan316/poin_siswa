@@ -1,0 +1,408 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --navcolor:#59b8ba;
+    --primarycolor:#dfe6ee;
+    --btncolor:#007bff;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: #f4f4f4 !important;
+    overflow-x: hidden;
+}
+
+
+
+.box-container{
+    width:100%;
+    height:130vh;
+    background-color:#f6f6f6;
+    
+}
+
+.title-box{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 1vw;
+    margin-bottom: 4vh;
+}
+
+.title-box h2{
+    color:#362FD9;
+}
+
+.button-add{
+    width: 10vw;
+    height: 6vh;
+    background-color: #0059ff;
+    color:white;
+    border:none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-add p{
+    margin-bottom:0 !important;
+}
+
+.top-table{
+    width: 100%;
+    height: 4vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 1vw;
+    margin-bottom: 2vh;
+}
+
+.entries{
+    width: 18%;
+    height: 100%;
+    
+}
+
+.search-box{
+    width: 20%;
+    height: 100%;
+   
+}
+
+.search-box input[type="text"]{
+    width: 70%;
+    height: 100%;
+    border:1px solid rgba(128, 128, 128, 0.486)
+}
+
+.search-box input[type="button"]{
+    width: 25%;
+    height: 100%;
+    cursor: pointer;
+    background-color: white;
+    border:1px solid rgba(0, 0, 0, 0.508)
+}
+
+.main-table{
+    width: 100%;
+    height: 50vh;
+    padding:0 1vw;
+    
+}
+
+.main-table tr{
+    width: 100%;
+   
+}
+
+.main-table th{
+  
+    text-align: left;
+    height: 5vh;
+}
+
+.main-table tr:nth-child(even){
+    background-color:#dddddd
+}
+
+.no{
+    width: 5vw;
+    height: 7vh;
+}
+
+.kelas{
+    width: 15vw;
+}
+
+.siswa{
+    width: 10vw;
+}
+
+.pelanggaran{
+    width: 16vw;
+}
+
+.poin{
+    width: 12vw;
+}
+
+.opsi{
+    width: 28vw;
+}
+
+.btn-view,.btn-edit,.btn-trash{
+    width: 10vw;
+    height: 5vh;
+    color:white;
+    border:none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.btn-view{
+    background-color:green
+}
+
+.btn-edit{
+    width: 7vw;
+    background-color: #0066ff;
+    margin-right:.5vw;
+}
+
+.btn-trash{
+    width: 3vw;
+    background-color: red;
+}
+
+.btn-view:active,.btn-edit:active,.btn-trash:active{
+    transform: scale(1.1);
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.btn-table{
+    display: flex;
+}
+
+.btn-table a{
+    margin-right:.5vw;
+    text-decoration:none
+}
+
+.backgroundclass-container,.background-editclass-container{
+    width: 100%;
+    height: 200%;
+    position: absolute;
+    background-color: #00000056;
+    z-index:20;
+    top:0;
+    display: none;
+    justify-content: center;
+    
+}
+
+.background-editclass-container{
+    display: flex;
+}
+
+.addclass-container{
+    width: 50%;
+    height: 36vh;
+    position: absolute;
+    background-color:#f6f6f6;
+    top:5vh
+}
+
+.title-class{
+    width: 100%;
+    height: 6vh;
+    padding:1vh 1vw;
+    color:#797979;
+    font-size:1.1rem;
+    margin-bottom:2vh
+}
+
+.main-content-class{
+    width: 100%;
+    height: 29vh;
+    padding:1vh 1vw;
+}
+
+.input-class-container{
+    width: 100%;
+    height: 16vh;
+}
+
+.input-class-container input{
+    width: 100%;
+    height: 5.5vh;
+    border:#989898 1px solid;
+    padding:0 .5vw
+}
+
+.input-class-container h2{
+    font-size: 1.2rem;
+}
+
+.button-container{
+    width: 100%;
+    height: 9vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+}
+
+.button-container button,.button-container input[type='submit']{
+    width: 10vw;
+    height: 70%;
+    transition: .2s;
+}
+
+.button-container button:active{
+    transform: scale(1.1);
+}
+
+.button-container a{
+    display: flex;
+    width: 10vw;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.btn-save{
+    width: 10vw;
+    height: 80%;
+    text-decoration: none;
+}
+
+.main-btn-save{
+    background-color:#007bff;
+    color:#ffffff;
+    border:none;
+    border-radius: 4px;
+    width: 10vw;
+    height: 70%;
+}
+
+.btn-cancel{
+    background-color: #ff0000;
+    color:#ffffff;
+    border:none;
+    border-radius: 4px;
+    margin-left:1vw
+}
+
+/* notif delete */
+
+.notif-delete{
+    width: 50%;
+    height: 36vh;
+    position: absolute;
+    background-color:#f6f6f6;
+    top:5vh;
+    padding:1vh 1vw
+}
+
+.title-delete{
+    width: 100%;
+    height: 7vh;
+    border-bottom:1px black solid
+}
+
+.main-content-delete{
+    width: 100%;
+    height: 26vh;
+}
+
+.text-delete-content{
+    width: 100%;
+    height: 18vh;
+}
+
+
+.button-delete-container{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+.button-delete-container a{
+    display: flex;
+    width: 15vh;
+    height: 80%;
+    text-decoration: none;
+    margin-right:1vw
+}
+
+.button-delete-container button{
+    width: 100%;
+    height: 100%;
+    border:none
+}
+
+.notif-btn-delete{
+    background-color:#ff0000;
+    color:#f4f4f4
+}
+
+.notif-btn-cancel{
+    background-color:var(--btncolor);
+    color:#f4f4f4
+}
+
+.table td{
+    vertical-align: middle;
+    height:7vh
+}
+
+/* btn on history */
+
+.button-top{
+    width:50vh;
+    height: 100%;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+}
+
+.btn-delete-top{
+    width: 20vh;
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-right: .5vw;
+}
+
+.btn-delete-top button{
+    background-color: #ff0000;
+    color:white;
+    width: 10vw;
+    height: 6vh;
+    border:none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.main-table tr:nth-child(even){
+    background-color: transparent !important;
+}
+
+/* user menu */
+
+.dprow{
+    display: flex;
+    flex-direction: row;
+}

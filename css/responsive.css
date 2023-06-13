@@ -1,0 +1,551 @@
+/* for phone */
+
+@media screen and (min-width:280px) and (max-width:940px) {
+    *{
+        padding: 0;
+        margin:0;
+        box-sizing: border-box;
+    }
+
+
+    body{
+        overflow-x: hidden;
+    }
+
+    main{
+        height: 190vh;
+        display: flex;
+        justify-content: center;
+    
+    }
+
+    /* nav */
+    nav{
+        width: 100%;
+        border-bottom: 2px solid #17eefd;
+        background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+        height: 8vh;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding:0 4vw;
+    }
+
+    nav .logo{
+        width: auto;
+        height: 90%;
+        margin-top: auto;
+        margin-bottom: auto;
+        position: relative;
+        
+        right: 50%;
+    }
+
+    nav .logo h2{
+        font-size: 1.8rem;
+        margin: auto;
+        position: relative;
+        top:-.5vh;
+        left:-5vw;
+    }
+
+    .text-logo{
+        display: flex;
+        align-items: center;
+        height: auto;
+    }
+
+    .logo-img-container{
+        width: 25vw;
+        height: 100%;
+        display: flex;
+    }
+
+    .logout-container{
+        width: 10vw;
+        margin-right: 10px;
+    }
+
+    .logout-container a button{
+        width: 18vw;
+    }
+
+    .phone-menu-button{
+        display: flex;
+    }
+
+    .func-logout{
+        display: none;
+    }
+
+    /* sidebar */
+    .sidebar{
+        width: 32vh;
+        display: none;
+        left: 0;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.589);
+    }
+
+    .sidebar ul{
+        width: 90%;
+    }
+
+    .sidebar li{
+        width: 100%;
+        padding-left: 20px;
+    }
+
+    .account .imgcontainer{
+        width: 12vw;
+        margin-right: 4vw;
+    }
+
+    .btn-logout{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .sidebaranm{
+        animation: sidebaranimation 0.3s ease;
+    }
+
+    .closesidebaranm{
+        animation: closesidebaranimation 0.3s ease;
+    }
+
+    @keyframes sidebaranimation {
+        0%{
+            width: 0;
+            opacity: 0;
+        }
+        80%{
+            opacity: 1;
+        }
+        100%{
+            width: 32vh;
+        }
+    }
+
+    @keyframes closesidebaranimation {
+        0%{
+            width: 32vh;
+        }
+        100%{
+            width: 0;
+        }
+    }
+
+
+    /* main-content */
+    .main-content{
+        width: 97%;
+        left:0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin:0;
+    }
+
+
+    /* dashboard */
+
+    .dashboard .main-content{
+        top:5vh
+    }
+
+    .top{
+        display: flex;
+        flex-direction: column;
+        height: 40vh;
+        align-items: center;
+    }
+
+    .data-card .container-icon{
+        width: 20%;
+    }
+
+    .data-card .container-text{
+        width: 80%;
+        padding: 0.5vh 1.5vh;
+    }
+
+    .data-card .container-icon i{
+        font-size: 2rem;
+    }
+
+    .data-card{
+        width: 90%;
+        margin-bottom:3vh
+    }
+
+    .main-content-mid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding:1vh 1vw
+    }
+
+    .siswa-card{
+        width: 90%;
+        margin-bottom:2vh
+    }
+
+    .siswa-card .name-content {
+     
+        width: 100%;
+        padding: 10px 1vh;
+        display: flex;
+        justify-content: center; 
+    }
+
+    .button-content a{
+        display: flex;
+        justify-content: center;
+    }
+
+    .title-mid{
+        padding:1vh 1vw;
+        position: relative;
+        left: 3vw; 
+    }
+
+    .siswa-card .poin-content p{
+        margin-left: 2vh;
+    }
+
+    .siswa-card .poin-content span{
+        margin-right: 2vh;
+    }
+
+    .siswa-card .button-content {
+        height: 15vh;
+    }
+
+
+    /* lihat siswa */
+
+    .button-edit p,.button-class p{
+        display: none;
+    }
+
+    .title-main{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .lihat-siswa .main-content{
+        top:8vh
+    }
+
+    .lihat-siswa .btn-print{
+        width: 6vw;
+    }
+
+    /* siswa */
+   /*  .siswa-tab .tablepagination{
+        width: 18vw !important;
+    } */
+
+
+    .siswa-tab .list-action{
+        width: 10vw;
+        height: 6vh;
+    }
+
+    .siswa-tab .main-content{
+        top:7vh
+    }
+
+    .siswa-tab .main-content .title-box h2{
+        font-size:1.7rem
+    }
+
+    .siswa-tab .button-add{
+        width: 8vw;
+    }
+
+    .siswa-tab .btn-submit{
+        width: 30vw;
+    }
+
+
+    /* kelas */
+    .button-add{
+        width: 5vw;
+    }
+
+    .button-add p{
+        display: none;
+    }
+
+    .main-table table{
+        width: 100%;
+    }
+
+    .main-table table tbody{
+        width: 18vw !important;
+    }
+
+    .android-version{
+        display: flex;
+    }
+
+    .pc-version{
+        display: none;
+    }
+
+    .list-action{
+        background-color:blue;
+        width: 8vw;
+        height: 100%;
+        border: none;
+        color:white;
+        border-radius:8px
+    }
+
+    .android-dpnone{
+        display: none !important;
+    }
+
+    .android-dpflex{
+        display: flex !important;
+    }
+
+    .listbox-android{
+        position: absolute;
+        background-color:gray;
+        width: 30vw;
+        height: 6vh;
+        right:20vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        display: none;
+    }
+
+    .listbox-android .btn-trash{
+        width: 8vw;
+    }
+
+    .kelas-tab .main-content{
+        top:8vh
+    }
+
+    .kelas-tab .title-box h2{
+        font-size:2rem
+    }
+
+    .kelas-tab .addclass-container{
+        width: 90vw;
+        padding:1vh 1vw;
+    }
+
+    .kelas-tab .addclass-container .main-btn-save{
+        width: 18vw;
+        margin-right:5vw
+    }
+
+    /* --------------------Input Pelanggaran-------------- */
+
+    .dp-none-android{
+        display: none;
+    }
+
+    .input-pelanggaran .main-content{
+        top:7vh
+    }
+
+    .input-pelanggaran .title-box h2{
+        font-size:2rem
+    }
+    .input-pelanggaran .count1{
+        margin-bottom:2vh;
+        height: 4vh;
+    }
+
+    .link-poin button span{
+        display: none;
+    }
+
+    .btn-tatatertib p{
+        display: none;
+    }
+
+    .btn-tatatertib {
+        width: 12vw;
+        height: 12vw;
+    }
+
+    .main-box {
+        margin-top: 10px;
+    }
+
+    .btn-tatatertib i {
+        font-size: 1.8rem;
+    }
+
+    .button-top .btn-delete-top p,
+    .button-top .button-add p{
+        display: none;
+    }
+
+    .button-top .btn-delete-top i,
+    .button-top .button-add i{
+        font-size: 1.5rem;
+        color: #f1f1f1;
+        display: flex;
+    }
+
+    .button-top .btn-delete-top i{
+        margin: 0 25%;
+    }
+
+    .button-top .button-add{
+        margin-left: 8vh;
+    }
+    .button-top .btn-delete-top{
+        left: 69vw;
+        position: absolute;
+        width: 10vh;
+    }
+
+    .button-top {
+        width: 23vw;
+    }
+
+    .link-poin button i{
+        font-size: 1.5rem;
+        display: flex;
+        text-align: center;
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+
+    .title-box h2{
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+
+    .title-box .judul {
+        font-size: 1.5rem;
+        margin: 0px;
+    }
+
+    .title-box .judul2 {
+        font-size: 1.2rem;
+        margin: 10px 6vh 0 0;
+        width: 29vh;
+    }
+
+    .btn-cari {
+        width: 15vw;
+    }
+
+    .input-main input[type="text"]:nth-child(2){
+        width: 15vh;
+    }
+
+    .input-container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .input-items,.input-items3{
+        width: 100%;
+        height: 10vh;
+        margin-bottom:4vh
+    }
+
+    .box-container{
+        padding:1vh 1vw;
+       
+    }
+
+    .main-content{
+        height: 180vh;
+    }
+
+    .input-items3 input{
+        width: 100%;
+    }
+
+    .tbody td:nth-child(2){
+        height: 5vh;
+        padding: 1px;
+        width: 2vh!important;
+    }
+
+    .history .btn-trash{
+        width: 10vw;
+    }
+    
+    /* ----- Sidebar ---------- */
+    .sidebar ul li:nth-child(6) {
+        display: flex;
+    }
+
+    /* -------- Logs ------------ */
+    .date-content{
+        width: 26vw;
+    }
+
+    .log-content{
+        margin-bottom:2vh
+    }
+
+    /* --------login------ */
+
+    .login{
+        display: flex;
+        justify-content: start;
+        height: 100vh;
+    }
+
+    .login .logo-main{
+        width: 100vw;
+        height: 30vh;
+    }
+
+    .login .box{
+        width: 90vw;
+    }
+
+    .login .mainform{
+        width: 100%;
+    }
+
+    .login .mainform input{
+        width: 100%;
+    }
+
+    .login .mainform input[type='submit']{
+        margin:2vh 0;
+    }
+
+    /* edit siswa */
+
+    .editsiswa .main-content{
+        top:8vh
+    }
+
+    /* history */
+
+    .history .main-content{
+        top:8vh
+    }
+
+    .history .btn-add{
+        margin:0 2vw;
+    }
+
+    .history .btn-delete-top{
+        margin:0 6vw;
+        height: auto;
+    }
+}

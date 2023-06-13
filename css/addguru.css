@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --navcolor:#59b8ba;
+    --primarycolor:#dfe6ee;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: #f4f4f4 !important;
+    overflow-x: hidden;
+}
+
+.input-container{
+    width: 100%;
+    height: 100%;
+}
+
+.input-container ul{
+    padding:1vh 1vw
+}
+
+.input-container li{
+    display: flex;
+    flex-direction: column;
+    margin-bottom:3vh
+}
+
+.input-container label{
+    font-weight: bold;
+    font-size:1.2rem;
+    margin-bottom:1vh
+}
+
+.input-container input[type="text"],.input-container input[type="password"],.input-container select{
+    width: 100%;
+    height: 5vh;
+    border:1px solid rgba(128, 128, 128, 0.635) ;
+    padding:0 .5vw;
+}
+
+.btn-tambah{
+    width: 10vw;
+    height: 7vh;
+    border-radius: 8px;
+    border:none;
+    color:white;
+    background-color:#0033ff;
+}

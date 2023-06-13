@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --navcolor:#59b8ba;
+    --primarycolor:#dfe6ee;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: #f4f4f4 !important;
+    overflow-x: hidden;
+}
+
+.box-container{
+    width:100%;
+    height:100vh;
+    background-color:#f6f6f6;
+   
+    padding:1vh 1vw
+}
+
+.title{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom:4vh;
+    color:#362FD9;
+}
+
+.main-title{
+    width: 12vw;
+    height: 100%;
+}
+
+.button-container{
+    width: 15vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-container a{
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+
+.button-container button{
+    width: 15vw;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff0000;
+    color:white;
+    border:none;
+    border-radius: 8px;
+}
+
+.button-container button p{
+    margin-bottom: 0;
+}
+
+.main-wrapper{
+    width: 100%;
+    height: 80%;
+    background-color:#2c2d37;
+    box-shadow: 1px 1px 12px #0000005b;
+    overflow-y: scroll;
+    padding:1vh 1vw;
+}
+
+.log-content{
+    width: 100%;
+    min-height: 6vh;
+    max-height: 12vh;
+    display: flex;
+    flex-direction: row;
+    padding:2vh 1vw;
+}
+
+.log-content h2{
+    font-size:1.3rem;
+    color:#ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.date-content{
+    color:#019eb6 !important;
+    margin-right:1vw
+}

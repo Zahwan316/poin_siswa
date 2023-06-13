@@ -1,0 +1,187 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --navcolor:#59b8ba;
+    --primarycolor:#dfe6ee;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: #f4f4f4 !important;
+    overflow-x: hidden;
+}
+
+.box-container{
+    width:100%;
+    height:200vh;
+    background-color:#f6f6f6;
+    padding:1vh 1vw
+}
+
+.top-wrapper{
+    width: 100%;
+    height: 94vh;
+    margin-bottom: 22vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.img-wrapper{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.img-wrapper img{
+    width: 80%;
+    height: 80%;
+    
+}
+
+.info-wrapper{
+    width: 60%;
+    height: 100%;
+   
+}
+
+.info-wrapper li h2,.info-wrapper li p{
+    margin:0;
+}
+
+.info-wrapper ul{
+    padding-left:0;
+   
+}
+
+.info-wrapper li{
+    margin-bottom:3vh;
+}
+
+.info-wrapper li p{
+    font-size:1rem
+   
+}
+
+.info-wrapper li h2{
+    margin-bottom:1vh;
+    font-size:1.4rem
+}
+
+.bottom-wrapper{
+    width: 100%;
+    height: 120vh;
+    
+}
+
+.maintable{
+    width: 100%;
+    height: 100%;
+}
+
+.maintable td{
+    text-align: left;
+    height: 8vh;
+    vertical-align: middle;
+}
+
+.maintable tr:nth-child(even){
+    background-color:#dddddd
+}
+
+.button-container{
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 4vh;
+}
+
+.button-container h2{
+    color:#362FD9;
+}
+
+.button-container a {
+    width: 10vw;
+    height: 100%;
+    text-decoration: none;
+}
+
+.button-edit,.button-exit{
+    width: 15vw !important;
+    height: 6vh !important;
+    background-color:#008000;
+    border-radius: 8px;
+    color:white;
+    border:none;
+    margin-top:6vh
+}
+
+.button-exit{
+    margin-top: 0;
+    background-color:#800000;
+    width: 10vw !important;
+}
+
+.maintable h2{
+    color:#362FD9;
+    margin-bottom:5vh
+}
+
+/* edit siswa */
+
+.info-wrapper ul li input{
+    width: 100%;
+    height: 4vh;
+}
+
+.info-wrapper ul li input[type='text'],.info-wrapper ul li input[type='date']{
+    width: 100%;
+    height: 5.5vh;
+    border:1px solid #b0b0b0b0;
+    padding:0.5vh 1vw
+}
+
+::placeholder{
+    color:#d1d1d1;
+}
+
+.input-radio{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-wrapper ul li h2{
+    margin-bottom:2vh
+}
+
+.radio{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.radio input{
+    width: 1vw !important;
+    height: 100%;
+    margin-right:1vw
+}
+
